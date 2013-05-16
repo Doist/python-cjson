@@ -1,3 +1,12 @@
+Changes in version 1.1
+------------------------
+
+(c) 2012-2013, Doist Inc team
+
+  * Allow to use integer and longs as object keys
+  * Convert datetime instances to strings looking like  DATE[[...]]
+  * Handle object __json__ attributes
+
 Changes in version 1.0.5
 ------------------------
 

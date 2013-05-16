@@ -2,5 +2,6 @@
 *.pyc
 .*.swp
 *~
+*.so
 /build
 /PKG-INFO

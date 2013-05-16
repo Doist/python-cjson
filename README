@@ -1,3 +1,21 @@
+python-cjson
+============
+
+This is modified and improved version of the python-cjson module, original
+version of which can be found here: https://pypi.python.org/pypi/python-cjson
+
+Differences from upstream:
+
+* We allow to use integer and longs as object keys (their are converted to
+  strings as you would expect)
+* Handle object __json__ attributes. If parser doesn't know how to convert an
+  object to JSON, it searches for the '__json__' callable attribute, invokes
+  it, and then uses return value instead of original object.
+* Convert datetime instances to strings looking
+  like DATE[[YYYY-MM-DD HH:MM:SS]]
+
+------------------------------------------------------------------------------
+
 This module implements a very fast JSON encoder/decoder for Python.
 
 JSON stands for JavaScript Object Notation and is a text based lightweight
